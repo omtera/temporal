@@ -6,10 +6,18 @@ limit.maxIDLength:
     constraints: {}
 
 
-archival:
-  history:
-    state: "enabled"
-    URI: "s3://temporal-archival-s3/history/"
-  visibility:
-    state: "enabled"
-    URI: "s3://temporal-archival-s3/visibility/"
+archival.history.state:
+  - constraints: {}
+    value: "enabled"
+
+archival.history.URI:
+  - constraints: {}
+    value: "s3://temporal-archival-s3/history/"
+
+archival.visibility.state:
+  - constraints: {}
+    value: "enabled"
+
+archival.visibility.URI:
+  - constraints: {}
+    value: "s3://temporal-archival-s3/visibility/"
