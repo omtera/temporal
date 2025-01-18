@@ -91,14 +91,14 @@ archival:
     enableRead: true
     provider:
       s3store:
-        region: "us-north-1"
+        region: "eu-north-1"
         logLevel: 0
   visibility:
     state: "enabled"
     enableRead: true
     provider:
       s3store:
-        region: "us-north-1"
+        region: "eu-north-1"
         logLevel: 0
 
 namespaceDefaults:
