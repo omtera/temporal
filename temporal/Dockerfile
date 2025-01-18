@@ -3,7 +3,7 @@ FROM temporalio/auto-setup:1.21.3
 ARG DB DBNAME DB_PORT POSTGRES_USER POSTGRES_PWD POSTGRES_SEEDS
 
 # Copy your custom static config (docker.yaml) to replace the default
-COPY docker.yaml /etc/temporal/config/base.yaml
+COPY docker.yaml /etc/temporal/config/development.yaml
 
 COPY dynamic.yaml /etc/temporal/config/dynamicconfig/dynamic.yaml
 
