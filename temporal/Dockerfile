@@ -2,6 +2,9 @@ FROM temporalio/auto-setup:1.21.3
 
 ARG DB DBNAME DB_PORT POSTGRES_USER POSTGRES_PWD POSTGRES_SEEDS
 
+# Switch to root to modify restricted directories
+USER root
+
 # Copy your custom static config (docker.yaml) to replace the default
 COPY development.yaml /etc/temporal/config/docker.yaml
 
